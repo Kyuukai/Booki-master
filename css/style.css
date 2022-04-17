@@ -1,0 +1,568 @@
+/* Feuille de Style CSS */
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+/* Elements principaux de la page */
+
+body {
+    font-family: "Raleway", "sans serif";
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px 5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, li {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1440px;
+}
+
+/* Header */
+
+#title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+#title img {
+    height: 60px;
+}
+
+/* Navigation */
+
+nav ul {
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    color: #181818;
+    padding: 0 40px;
+}
+
+nav a:hover {
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
+    height: 100px;
+}
+
+/* Search */
+
+.searchBar {
+    display: flex;
+    border: 1px solid #F2F2F2;
+    border-radius: 10px 10px 10px 10px;
+    width: fit-content;
+}
+
+.searchButton {
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0px 10px 10px 0px;
+    width: 120px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 0;
+}
+
+.searchInput {
+    padding: 0px 16px;
+    font-weight: bold;
+    font-size: 16px;
+    width: 180px;
+    border-radius: 1px;
+    border: 0;
+}
+
+.searchBar > i {
+    padding: 16px;
+    background-color: #F2F2F2;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.searchButton i {
+    display: none;
+}
+
+/* Filters */
+
+.filter {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.filterButton {
+    display: flex;
+    align-items: center;
+    margin: 0px 15px;
+    font-weight: bold;
+    font-size: 18px;
+    border: 1px solid;
+    border-color: #F2F2F2;
+    border-radius: 40px;
+    background-color: white;
+    border: 3px solid #F2F2F2;
+    padding: 0px;
+    height: 50px;
+}
+
+.filterButton > i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0065FC;
+    height: 100%;
+    width: 46px;
+    background-color: #DEEBFF;
+    border-radius: 50%;
+}
+
+.filterButton > span {
+    padding: 0px 20px;
+}
+
+.filterText:hover {
+    color: #0065FC;
+}
+
+.filterInfo {
+    display: flex;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+#filterInfoBub {
+    display: flex;
+    margin: 0px 10px;
+    padding: 8px 10px;
+    font-size: 12px;
+    border: 2px solid #F2F2F2;
+    border-radius: 30px;
+    color: #0065FC;
+}
+
+/* HOSTING */
+
+.layout {
+    display: flex;
+    gap: 30px;
+}
+
+.hotel, .popular {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 2.5%;
+}
+
+#hotelAnchor {
+    margin: 0;
+}
+
+.hotelTab {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 30px 0px 50px 0px;
+}
+
+.hotelCard {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.hotelCard img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 120px;
+    width: 270px;
+    object-fit: cover;
+}
+
+.hotelDescription > .hotelName, .hotelText, .hotelRating {
+    margin: 8px;
+}
+
+.hotelName, .hotelPrice {
+    font-size: 18px;
+}
+
+.hotelName:hover {
+    color: #0065FC;
+}
+
+.hotelText {
+    font-size: 16px;
+}
+
+.hotelRating {
+    font-size: 14px;
+}
+
+.hotelName, .hotelPrice {
+    font-weight: bold;
+}
+
+.hotelName {
+    margin-top: 10px;
+}
+
+.hotelRating {
+    color:#0065FC;
+}
+
+.hotelRatingGray {
+    color:#F2F2F2;
+}
+
+.hotelName, p {
+    color: #181818;
+}
+
+#hotelMore {
+    margin: 0;
+    color: #181818;
+}
+
+#hotelMore:hover {
+    color: #0065FC;
+}
+
+/* POPULAR */
+
+.popularHead {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popularIcon {
+    font-size: 26px;
+}
+
+.popularTab {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 30px 0px 50px 0px;
+}
+
+#popularMost {
+    margin: 0;
+}
+
+.popularCard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: white;
+    padding: 5px;
+    border-radius: 20px;
+    min-width: 340px;
+}
+
+.popularCard img {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 140px;
+    width: 140px;
+    object-fit: cover;
+}
+
+.popularDescription > .popularName, .popularText {
+    margin: 10px 0px 0px 20px;
+}
+
+.popularDescription > .popularRating {
+    margin: 40px 0px 0px 20px;
+}
+
+.popularName, .popularPrice {
+    font-size: 18px;
+}
+
+.popularName:hover {
+    color: #0065FC;
+}
+
+.popularText {
+    font-size: 16px;
+}
+
+.popularRating {
+    font-size: 14px;
+}
+
+.popularName, .popularPrice {
+    font-weight: bold;
+}
+
+.popularName {
+    margin-top: 10px;
+}
+
+.popularRating {
+    display: flex;
+    color:#0065FC;
+}
+
+.popularRatingGray {
+    color:#F2F2F2;
+}
+
+.popularName, p {
+    color: #181818;
+}
+
+/* Activity */
+
+#activityHead {
+    margin: 40px 0px 20px 0px;
+}
+
+.activity {
+    display: flex;
+}
+
+.activityTab {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 53px;
+}
+
+.activityFirstBlock, .activitySecondBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.activityCard {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 10px 10px 0px #f2f2f2;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.activityName {
+    color: #181818;
+    display: flex;
+    margin: 16px
+}
+
+.activityName:hover {
+    color: #0065FC;
+}
+
+.activityBigCard img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 380px;
+    width: 320px;
+    object-fit: cover;
+}
+
+.activityMediumCard img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 172px;
+    width: 320px;
+    object-fit: cover;
+}
+
+.activitySmallestCard img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 120px;
+    width: 320px;
+    object-fit: cover;
+}
+
+.activityDoubleCard img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 146px;
+    width: 320px;
+    object-fit: cover;
+}
+/* FOOTER */
+
+footer {
+    background-color: #F2F2F2;
+    margin: 40px 0px 0px 0px;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15%;
+}
+
+.aboutText {
+    display: flex;
+    color: #181818;
+}
+
+.aboutText:hover {
+    color: #0065FC;
+}
+
+/* Mobile Version */
+
+@media only screen and (max-width: 768px ) {
+
+    /* Elements principaux de la page */
+
+    body {
+        margin: 0 5%;
+    }
+
+    /* Navigation */
+
+    #title {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 40px 0px;
+    }
+
+    nav a {
+        border-bottom: 3px solid #f2f2f2;
+        height: 50px;
+    }
+
+    nav a:hover {
+        border-top: 0;
+        border-bottom: 3px solid #0065FC;
+        color: #0065FC;
+        height: 50px;
+
+    }
+
+    /* Search */
+
+    .searchButton span {
+        display: none;
+    }
+
+    .searchButton i {
+        display: inline-block;
+    }
+
+    .searchButton {
+        width: 50px;
+        border-radius: 15px 15px 15px 15px;
+    }
+    
+    .searchBar {
+        border-radius: 10px 15px 15px 10px;
+    }
+
+    /* Filters */
+
+    .filterTitle {
+        width: 100%;
+    }
+
+    .filterButton {
+        margin: 5px 2px;
+    }
+
+    /* HOSTING */
+
+    .layout {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .hotel, .popular {
+        border-radius: 0px;
+    }
+    
+    .hotel {
+        background-color: white;
+        margin-top: 30px;
+    }
+
+    #hotelAnchor {
+        margin-bottom: 10px;
+    }
+
+    .hotelTab {
+        gap: 0;
+        margin: 0
+    }
+
+    .hotelCard {
+        box-shadow: 2px 2px 5px 5px #f2f2f2;
+        margin: 10px 0px;
+    }
+
+    .hotelCard img {
+        height: 120px;
+        width: 340px;
+    }
+
+    #hotelMore {
+        margin: 20px 0px;
+    }
+
+    .popular {
+        order: -1;
+        margin: 0 !important;
+    }
+
+    .popularHead {
+        margin: 10px;
+    }
+
+    /* Activity */
+
+    .activityTab {
+        gap: 20px;
+    }
+
+    .activityBigCard img {
+        height: 150px;
+        width: 370px;
+    }
+
+    .activitySmallestCard img {
+        height: 150px;
+        width: 370px;
+    }
+
+    .activityMediumCard img {
+        height: 150px;
+        width: 370px;
+    }
+
+    .activityDoubleCard img{ 
+        height: 150px;
+        width: 370px;
+    }
+
+    .activityFirstBlock, .activitySecondBlock {
+        gap: 20px;
+    }
+}
