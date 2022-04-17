@@ -7,7 +7,11 @@ body {
     font-family: "Raleway", "sans serif";
     box-sizing: border-box;
     padding: 0px;
-    margin: 0px 5%;
+    margin: 0px;
+}
+
+main {
+    min-height: calc(100vh - 300px)
 }
 
 a {
@@ -21,9 +25,9 @@ ul, li {
 }
 
 .container {
+    padding: 0px 30px;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
     max-width: 1440px;
 }
 
@@ -170,7 +174,7 @@ nav a:hover {
 .hotel, .popular {
     background-color: #f2f2f2;
     border-radius: 20px;
-    padding: 2.5%;
+    padding: 30px;
 }
 
 #hotelAnchor {
@@ -434,7 +438,11 @@ footer {
     /* Elements principaux de la page */
 
     body {
-        margin: 0 5%;
+        margin: 0px;
+    }
+
+    .sm-no-margin {
+        padding: 0px !important;
     }
 
     /* Navigation */
@@ -518,9 +526,13 @@ footer {
         margin: 10px 0px;
     }
 
+    .hotelTab > a {
+        width: 100%;
+    }
+
     .hotelCard img {
         height: 120px;
-        width: 340px;
+        width: 100%;
     }
 
     #hotelMore {
@@ -542,24 +554,29 @@ footer {
         gap: 20px;
     }
 
+    .activityTab > a,
+    .activityTab > div {
+      width: 100%;
+    }
+
+    .activityCard > div > img {
+        width: 100%;
+    }
+
     .activityBigCard img {
         height: 150px;
-        width: 370px;
     }
 
     .activitySmallestCard img {
         height: 150px;
-        width: 370px;
     }
 
     .activityMediumCard img {
         height: 150px;
-        width: 370px;
     }
 
     .activityDoubleCard img{ 
         height: 150px;
-        width: 370px;
     }
 
     .activityFirstBlock, .activitySecondBlock {
